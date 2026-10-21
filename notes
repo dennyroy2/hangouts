@@ -1,0 +1,31 @@
+- hangouts app
+- objects: hangout, people, invitation
+- people / user should be able to create a hangout and invite other users
+- each user has a unique username (with which they can be searched), and a display name (single name that is displayed in most situations in place of the username)
+- users can accept or decline invite
+- hangouts should have location, date time, and attendees,
+- attendees should be marked as invited if they haven't accepted yet, and not show up if they've declined
+- accepted attendees should just have their name show up
+- hangouts can have a single picture or carousel of pictures. hangouts with no picture should have a generic image
+- the app should have 3 tabs on the bottom navbar, profile (with a person icon), create (with a plus icon), and search (with a magnifying glass icon)
+- users can click the create tab on the bottom nav bar to create hangouts
+- on clicking the create tab, a new screen should be shown, with outlined fields for hangout name (required), attendees (required), location (required), date and time (required), picture (optional), description (optional)
+- on clicking the profile tab, profile screen opens
+- users have a a view of 2 sections, one of recent friends added, and another of recent hangouts (attended and created)
+- on clicking the friends section, the friends screen is navigated to, showing the users friends (other users of the app)
+- friends section also shows any pending friend requests from users
+- user can accept or decline friend requests
+- on accepting friend request, new user is added to current user's list of friends
+- on clicking the recent hangouts section, the recent hangouts screen is navigated to and shows a scrollable list of the users past hangouts they've been invited to.
+- recent hangouts also shows upcoming hangouts that the user has been invited to
+- recent hangouts is sorted chronologically (from recent to oldest, including hangouts set in the future)
+- on clicking the search tab on the navbar, the user should be directed to the search screen
+- on the search screen, user can search for other users using username or display name
+- other users the user has already added can also show up
+- users the current user has not added will have a (+ Add) button towards the right of their username and displayname. 
+- clicking add sends a friend request from the current user to the new user, which the new user can accept or decline
+
+• Frontend / Backend: Next.js (React) + TypeScript
+• Styling: Tailwind CSS
+• Database & Auth: Supabase (PostgreSQL)
+• Hosting: Vercel
